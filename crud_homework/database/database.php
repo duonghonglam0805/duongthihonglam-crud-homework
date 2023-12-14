@@ -79,7 +79,8 @@ function selectAllStudents($db) {
 /**
  * Get only one on record by id 
  */
-function selectOnestudent($db,$id) {
+function selectOnestudent($id) {
+    global $db;
     $squery = $db->prepare("SELECT id,name,age, email, profile FROM  student WHERE id = :id ");
     try {
         $squery->bindParam(':id', $id, PDO::PARAM_INT);

@@ -19,7 +19,6 @@
     <div class="container p-4">
         <form action="update_model.php" method="post">
             <div class="form-group">
-            <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" hidden>
                 <input type="text" class="form-control" placeholder="Name" name="name" value="<?php echo $name ?>">
             </div>
             <div class="form-group">
